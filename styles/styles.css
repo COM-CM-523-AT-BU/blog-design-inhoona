@@ -2,3 +2,152 @@
 Put your styles in this file. Import your fonts at the top of the file! See example below, which uses @import to retrieve the Roboto typeface from Google Fonts.
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 ===== */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;1,600&family=Source+Sans+3:ital@0;1&display=swap');
+
+/* General Layout */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Source Sans 3', sans-serif;
+  background: #000;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.article {
+  background: #111;
+  margin: 3rem auto;
+  padding: 3rem 2rem;
+  max-width: 800px;
+  border-radius: 20px;
+  box-shadow: 0 8px 24px rgba(255,255,255,0.05);
+}
+
+/* Article meta info (time, tags, author, share links) */
+.meta {
+  color: #bbb;
+  font-size: 0.95rem;
+  letter-spacing: 0.6px;
+  margin: 1.5rem auto 2.5rem;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 1.8;
+}
+
+.meta span, 
+.meta a {
+  margin: 0 0.4rem;
+}
+
+.meta a {
+  color: #ff7ecb;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: all 0.3s ease;
+}
+
+.meta a:hover {
+  color: #a88bff;
+  border-bottom: 1px solid #a88bff;
+}
+
+/* Optional small icon or divider between items */
+.meta-divider {
+  color: #666;
+  margin: 0 0.6rem;
+}
+
+/* Author section */
+.author {
+  color: #fff;
+  font-weight: 600;
+  font-family: 'Montserrat', sans-serif;
+  margin-top: 2rem;
+  font-size: 1.05rem;
+  letter-spacing: 0.5px;
+}
+
+/* Headings */
+h1, h2, h3 {
+  font-family: 'Montserrat', sans-serif;
+  margin-bottom: 1rem;
+  margin-top: 2rem;
+  color: #fff;
+}
+
+h1 {
+  font-size: 2.8rem;
+  background: linear-gradient(90deg, #a88bff, #ff7ecb);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+h2 {
+  font-size: 1.8rem;
+  color: #ff7ecb;
+}
+
+h3 {
+  font-size: 1.4rem;
+  color: #a88bff;
+}
+
+/* Paragraphs */
+p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #ddd;
+  max-width: 650px;
+  margin: 0.8rem auto;
+}
+
+/* Links */
+a {
+  color: #a88bff;
+  text-decoration: none;
+  border-bottom: 2px solid #ff7ecb;
+  transition: all 0.3s ease;
+}
+
+a:hover {
+  color: #ff7ecb;
+  border-color: #a88bff;
+}
+
+/* Blockquotes */
+blockquote {
+  background: #1a1a1a;
+  border-left: 4px solid #a88bff;
+  padding: 1rem 2rem;
+  margin: 2rem auto;
+  font-style: italic;
+  color: #f0f0f0;
+  border-radius: 10px;
+  max-width: 600px;
+}
+
+/* Images */
+img {
+  display: block;
+  margin: 2rem auto;
+  max-width: 90%;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(255,255,255,0.1);
+}
+
+/* Divider */
+hr {
+  border: none;
+  height: 3px;
+  width: 80px;
+  background: linear-gradient(90deg, #a88bff, #ff7ecb);
+  margin: 3rem auto;
+  border-radius: 3px;
+}
